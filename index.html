@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag 2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tag2.css">
+   <!--  <link rel="stylesheet" href="assets/js/audio.js"> -->
+</head>
+<body>
+    <!-- Kommentar-->
+    <div>
+        <figure>
+            <img src="img/1.jpg" alt="">
+            <figcaption>JPEG</figcaption>
+        </figure>
+        <figure>
+            <img src="img/giphy.webp" alt="">
+            <figcaption>Webp</figcaption>
+        </figure>
+        <figure>
+            <img src="img/butterfly1.png" alt="">
+            <figcaption>png</figcaption>
+        </figure>
+        <figure>
+            <img src="img/giphy.gif" alt="">
+            <figcaption>gif</figcaption>
+        </figure>
+        <figure>
+            <img src="img/kiwi.svg" alt="">
+            <figcaption>gif</figcaption>
+        </figure>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/earth.mp4" type="video/mp4">
+        </video>
+        <video width="320" height="240" controls autoplay>
+        <source src=".video/earth.mp4" type="video/mp4">
+        <source src="video/earth.mp4" type="video/mp4">
+        </video>
+        <div>
+            <audio id="myAudio" controls> <!-- ohne controls für die LB-->
+                <source src="audio/Audio.mp3 type="  type="audio/mp3">
+            </audio> 
+        </div>
+        <button onclick="playAudio()" >Play</button>
+            <button onclick="pauseAudio()">Stop</button>
+            <button onclick="volUp()">Vol+</button>
+            <button onclick="volDown()">Vol-</button>
+</body>
+<script>
+   /*  var z = document.getElementById("myAudio");
+x.addEventListener("play", function() {
+  alert("The audio has started to play");
+}); */
+document.getElementById("myAudio").src = "audio/Audio.mp3";
+ 
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+    x.play();
+}
+
+function pauseAudio() {
+    x.pause();
+} 
+function getVolume() { 
+  alert(vid.volume);
+} 
+  
+function volUp() { 
+  x.volume += 0.1;
+
+} 
+  
+function volDown() { 
+  x.volume -= 0.1;
+  if(x.volume == 0.0)x.muted=true;
+} 
+    </script>
+</html>

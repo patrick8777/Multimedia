@@ -1,0 +1,44 @@
+body {
+    background-color: #555;
+    color: white;
+   }
+    
+   body > div:first-child {
+    display: flex;
+    width: 100vw;
+   }
+    
+   img {
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+   }
+    
+   figure {
+    margin: 0;
+    padding: 0;
+   }
+    
+   #myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+   }
+    
+   #myVideo1 {
+    max-width: 720px;
+   }
+
+    /*video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }/*
